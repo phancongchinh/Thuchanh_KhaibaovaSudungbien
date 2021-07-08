@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khai báo và sử dụng biến</title>
+</head>
+<body>
+
+<div>
+    <h2>Bài 1: Khai báo và in giá trị của biến ra màn hình</h2>
+    <script>
+        let i=10;
+        let f=20.5;
+        let b=true;
+        let s="Hà Nội";
+
+        document.write('i = ' + i);
+        document.write("<br/>");
+        document.write('f = ' + f);
+        document.write("<br>");
+        document.write('b = ' + b);
+        document.write("<br>");
+        document.write('s = ' + s);
+    </script>
+</div>
+
+<div>
+    <h2>Bài 2: Mã sc tính diện tích hình chữ nhật</h2>
+    <script>
+        let width = 10;
+        let height =20;
+        let area = height * width;
+        document.write('area = ' + area)
+    </script>
+</div>
+
+<div>
+    <h2>Bài 3</h2>
+    <button type="button" onclick="getandcheck()"> Nhập hai số: a, b</button>
+        <script>
+            function getandcheck(a,b) {
+                a = prompt("Enter the number a:")
+                b = prompt("Enter the number b:");
+                if (a % b === 0) {
+                    alert("a là một bội số của b");
+                } else {
+                    alert("a không phải bội số của b");
+                }
+            }
+        </script>
+</div>
+</body>
+</html>
